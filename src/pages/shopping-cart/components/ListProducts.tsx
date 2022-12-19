@@ -7,10 +7,13 @@ type Props = {
 
 function ListProducts({ items }: Props) {
   return (
-    <section className="products-container">
-      {items?.map(({ product }) => (
-        <ProductCard key={product.sku} product={product} />
-      ))}
+    <section className="mt-4">
+      <h1>PRODUTOS</h1>
+      <section className="session-container">
+        {items?.map(({ product }) => (
+          <ProductCard key={product.sku} product={product} />
+        ))}
+      </section>
     </section>
   )
 }

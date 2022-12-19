@@ -18,7 +18,6 @@ function ShoppingCart() {
     <section className="page-container">
       <Header />
       <section className="page-layout">
-        <h1 className="text-session">PRODUTOS</h1>
         <ListProducts items={data?.items || []} />
         <CheckoutPrices data={data} />
         <button className="button-theme mt-4">
