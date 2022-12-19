@@ -1,12 +1,16 @@
+import { IMaskInput } from 'react-imask'
+
 function PaymentForm() {
   return (
-    <form className="payment-form">
+    <form id="payment-form" className="payment-form">
       <label htmlFor="cardNumber" className="payment-form__label">
         Número do cartão:
-        <input
-          id="cardNumber"
+        <IMaskInput
           className="payment-form__input"
+          mask="0000.0000.0000.0000"
           placeholder="____.____.____.____"
+          id="cardNumber"
+          min={11}
         />
       </label>
 
@@ -22,10 +26,11 @@ function PaymentForm() {
       <div className="flex justify-between space-x-4">
         <label htmlFor="validity" className="payment-form__label">
           Validade(mês/ano):
-          <input
-            id="validity"
+          <IMaskInput
             className="payment-form__input w-full"
+            mask="00/0000"
             placeholder="__/____"
+            id="validity"
           />
         </label>
 
