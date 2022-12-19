@@ -18,6 +18,9 @@
   .page-layout {
     @apply mx-auto max-w-md;
   }
+  .session-container {
+    @apply space-y-4 rounded-[3px] bg-white p-3 shadow-[1px_1px_5px_0_rgba(0,0,29,0.22)];
+  }
   .page-container {
     @apply min-h-screen bg-[#EEE] p-4 pt-20;
   }
