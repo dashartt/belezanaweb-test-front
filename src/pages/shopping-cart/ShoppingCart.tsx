@@ -1,5 +1,5 @@
 import './ShoppingCart.style.css'
-import Header from 'components/header'
+import Header from 'components/header/Header'
 import ProductCard from 'components/product-card'
 import { formatPrice } from 'helpers'
 import { useEffect, useState } from 'react'

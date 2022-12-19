@@ -1,5 +1,12 @@
+import Header from 'components/header/Header'
+
 function PostPurchase() {
-  return <p>PostPurchase page</p>
+  return (
+    <>
+      <Header />
+      <p>PostPurchase page</p>
+    </>
+  )
 }
 
 export default PostPurchase
