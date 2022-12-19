@@ -11,7 +11,8 @@ module.exports = {
         orangetheme: {
           normal: '#FF6C00',
           hover: '#D45A00'
-        }
+        },
+        graytheme: '#CCC'
       }
     }
   },
