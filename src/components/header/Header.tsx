@@ -9,7 +9,7 @@ function Header() {
   useEffect(() => changeItemNavColor(location.pathname), [location.pathname])
 
   return (
-    <header>
+    <header className="header-container">
       <nav className="header-nav">
         <Link id="shopping-cart" to="/shopping-cart">
           SACOLA

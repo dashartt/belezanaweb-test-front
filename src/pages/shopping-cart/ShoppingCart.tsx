@@ -14,9 +14,9 @@ function ShoppingCart() {
   }, [])
 
   return (
-    <>
+    <section className="page-container">
       <Header />
-      <section className="page-container">
+      <section className="page-layout">
         <h1 className="text-session">PRODUTOS</h1>
 
         <section className="products-container">
@@ -42,7 +42,7 @@ function ShoppingCart() {
 
         <button className="button-theme mt-4">SEGUIR PARA O PAGAMENTO</button>
       </section>
-    </>
+    </section>
   )
 }
 

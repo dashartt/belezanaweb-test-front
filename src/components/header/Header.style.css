@@ -1,7 +1,10 @@
 @tailwind components;
 
 @layer components {
+  .header-container {
+    @apply bg-white absolute top-0 w-full left-0;
+  }
   .header-nav {
-    @apply flex justify-between p-4 font-bold text-[#CCC] shadow-[1px_1px_5px_0_rgba(0,0,29,0.22)];
+    @apply mx-auto md:w-6/12 lg:w-4/12 flex justify-between p-4 font-bold text-[#CCC] shadow-[1px_1px_5px_0_rgba(0,0,29,0.22)] bg-white max-w-lg;
   }
 }

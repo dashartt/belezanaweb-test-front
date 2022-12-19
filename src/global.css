@@ -2,25 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  h1 {
+@layer base {
+  /* h1 {
     @apply text-2xl;
   }
   h2 {
     @apply text-xl;
-  }
-  
-} */
+  } */
+}
 
 @layer components {
   .text-session {
     @apply ml-2 font-bold text-[#999];
   }
+  .page-layout {
+    @apply mx-auto max-w-md;
+  }
   .page-container {
-    @apply min-h-screen bg-[#EEE] p-4;
+    @apply min-h-screen bg-[#EEE] p-4 pt-20;
   }
   .button-theme {
-    @apply rounded-[3px] bg-[#FF6C00] shadow-[inset_0_-3px_0_0_#D45A00,0_2px_4px_0_rgba(0,0,0,0.25)] hover:bg-[#D45A00] w-full text-white font-bold p-4 text-xl;
+    @apply rounded-[3px] bg-orangetheme-normal shadow-[inset_0_-3px_0_0_#D45A00,0_2px_4px_0_rgba(0,0,0,0.25)] hover:bg-orangetheme-hover w-full text-white font-bold p-4 text-xl;
   }
 }
 
