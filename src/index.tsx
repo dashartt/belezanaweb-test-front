@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import 'tailwindcss/tailwind.css'
+import './global.css'
 import App from 'components/App'
 import { HashRouter } from 'react-router-dom'
 
