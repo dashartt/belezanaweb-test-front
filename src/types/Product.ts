@@ -19,6 +19,6 @@ type ImageObjects = {
 export type Product = {
   name: string
   sku: string
-  imageObjects: ImageObjects
+  imageObjects: ImageObjects[]
   priceSpecification: PriceSpecification
 }
