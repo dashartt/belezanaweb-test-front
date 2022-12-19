@@ -11,15 +11,9 @@ function Header() {
   return (
     <header className="header-container">
       <nav className="header-nav">
-        <Link id="shopping-cart" to="/shopping-cart">
-          SACOLA
-        </Link>
-        <Link id="payment" to="/payment">
-          PAGAMENTO
-        </Link>
-        <Link id="post-purchase" to="/post-purchase">
-          CONFIRMAÇÃO
-        </Link>
+        <span id="shopping-cart">SACOLA</span>
+        <span id="payment">PAGAMENTO</span>
+        <span id="post-purchase">CONFIRMAÇÃO</span>
       </nav>
     </header>
   )
