@@ -22,7 +22,9 @@ function ShoppingCart() {
         <ListProducts items={data?.items || []} />
         <CheckoutPrices data={data} />
         <button className="button-theme mt-4">
-          <Link to="/payment">SEGUIR PARA O PAGAMENTO</Link>
+          <Link to="/payment" state={{ data: data }}>
+            SEGUIR PARA O PAGAMENTO
+          </Link>
         </button>
       </section>
     </section>
