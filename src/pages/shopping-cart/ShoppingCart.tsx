@@ -5,6 +5,7 @@ import getProducts from 'services/api'
 import { ShoppingCart as IShoppingCart } from 'types/ShoppingCart'
 import ListProducts from './components/ListProducts'
 import CheckoutPrices from './components/CheckoutPrices'
+import { Link } from 'react-router-dom'
 
 function ShoppingCart() {
   const [data, setData] = useState<IShoppingCart | null>(null)
@@ -20,7 +21,9 @@ function ShoppingCart() {
         <h1 className="text-session">PRODUTOS</h1>
         <ListProducts items={data?.items || []} />
         <CheckoutPrices data={data} />
-        <button className="button-theme mt-4">SEGUIR PARA O PAGAMENTO</button>
+        <button className="button-theme mt-4">
+          <Link to="/payment">SEGUIR PARA O PAGAMENTO</Link>
+        </button>
       </section>
     </section>
   )
