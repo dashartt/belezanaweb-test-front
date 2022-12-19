@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .header-nav {
+    @apply flex justify-between p-4 font-bold text-[#CCC] shadow-[1px_1px_5px_0_rgba(0,0,29,0.22)];
+  }
+}
