@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header>
-      <nav className="flex justify-between p-4 font-bold text-[#CCC]">
+      <nav className="flex justify-between p-4 font-bold text-[#CCC] shadow-[1px_1px_5px_0_rgba(0,0,29,0.22)]">
         <Link id="shopping-cart" to="/shopping-cart">
           SACOLA
         </Link>
