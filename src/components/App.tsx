@@ -1,6 +1,6 @@
 import Payment from 'pages/Payment'
 import PostPurchase from 'pages/PostPurchase'
-import ShoppingCart from 'pages/ShoppingCart'
+import ShoppingCart from 'pages/shopping-cart/ShoppingCart'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 function App() {

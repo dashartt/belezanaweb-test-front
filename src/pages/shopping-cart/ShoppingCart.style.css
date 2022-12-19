@@ -1,0 +1,13 @@
+@tailwind components;
+
+@layer components {
+  .products-container {
+    @apply space-y-4 rounded-[3px] bg-white p-3 shadow-[1px_1px_5px_0_rgba(0,0,29,0.22)];
+  }
+  .details-container {
+    @apply flex justify-between rounded-[3px] border border-gray-300 p-4;
+  }
+  .details-container__subcontainer {
+    @apply flex flex-col space-y-1;
+  }
+}
