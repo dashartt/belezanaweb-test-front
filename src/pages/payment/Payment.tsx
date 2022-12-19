@@ -6,7 +6,6 @@ import PaymentForm from './PaymentForm'
 
 function Payment() {
   const { state } = useLocation()
-  console.log(state)
 
   return (
     <section className="page-container">
@@ -18,7 +17,9 @@ function Payment() {
 
         <CheckoutPrices data={state?.data} />
         <button className="button-theme mt-4">
-          <Link to="/post-purchase">FINALIZAR PEDIDO</Link>
+          <Link to="/post-purchase" state={state}>
+            FINALIZAR PEDIDO
+          </Link>
         </button>
       </section>
     </section>
