@@ -1,11 +1,10 @@
-import './ShoppingCart.style.css'
 import Header from 'components/header/Header'
 import { useEffect, useState } from 'react'
 import getProducts from 'services/api'
 import { ShoppingCart as IShoppingCart } from 'types/ShoppingCart'
-import ListProducts from './components/ListProducts'
-import CheckoutPrices from './components/CheckoutPrices'
+import ListProducts from '../../components/list-products/ListProducts'
 import { Link } from 'react-router-dom'
+import CheckoutPrices from 'components/checkout-prices/CheckoutPrices'
 
 function ShoppingCart() {
   const [data, setData] = useState<IShoppingCart | null>(null)

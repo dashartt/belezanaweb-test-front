@@ -1,9 +1,9 @@
 import './Payment.style.css'
 import Header from 'components/header/Header'
-import CheckoutPrices from 'pages/shopping-cart/components/CheckoutPrices'
 import { useLocation, useNavigate } from 'react-router-dom'
 import PaymentForm from './PaymentForm'
 import { ShoppingCart } from 'types/ShoppingCart'
+import CheckoutPrices from 'components/checkout-prices/CheckoutPrices'
 
 function Payment() {
   const { state } = useLocation()
@@ -37,11 +37,8 @@ function Payment() {
       <Header />
       <section className="page-layout">
         <h1 className="text-session">CARTÃO DE CRÉDITO</h1>
-
         <PaymentForm />
-
         <CheckoutPrices data={state?.data} />
-
         <button
           type="submit"
           onClick={onNextPage}

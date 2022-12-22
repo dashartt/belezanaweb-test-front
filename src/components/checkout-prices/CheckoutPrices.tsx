@@ -1,3 +1,4 @@
+import './CheckoutPrices.style.css'
 import { formatPrice } from 'helpers'
 import { ShoppingCart } from 'types/ShoppingCart'
 
