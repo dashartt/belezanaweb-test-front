@@ -1,11 +1,36 @@
 import './Payment.style.css'
 import Header from 'components/header/Header'
 import CheckoutPrices from 'pages/shopping-cart/components/CheckoutPrices'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import PaymentForm from './PaymentForm'
+import { ShoppingCart } from 'types/ShoppingCart'
 
 function Payment() {
   const { state } = useLocation()
+  const navigate = useNavigate()
+  const shoppingCartDetails = state.data as ShoppingCart
+
+  const onNextPage = () => {
+    const paymentForm = document.getElementById(
+      'payment-form'
+    ) as HTMLFormElement
+
+    const [cardNumberNode, cardholderNameNode, validityNode] =
+      paymentForm.elements as unknown as HTMLInputElement[]
+
+    navigate('/post-purchase', {
+      state: {
+        purchaseDetails: {
+          shoppingCartDetails,
+          buyerDetails: {
+            cardNumber: cardNumberNode.value,
+            cardholderName: cardholderNameNode.value,
+            validity: validityNode.value
+          }
+        }
+      }
+    })
+  }
 
   return (
     <section className="page-container">
@@ -16,10 +41,13 @@ function Payment() {
         <PaymentForm />
 
         <CheckoutPrices data={state?.data} />
-        <button className="button-theme mt-4">
-          <Link to="/post-purchase" state={state}>
-            FINALIZAR PEDIDO
-          </Link>
+
+        <button
+          type="submit"
+          onClick={onNextPage}
+          className="button-theme mt-4"
+        >
+          FINALIZAR PEDIDO
         </button>
       </section>
     </section>
