@@ -8,7 +8,7 @@ type Props = {
 function ListProducts({ items }: Props) {
   return (
     <section className="mt-4">
-      <h1>PRODUTOS</h1>
+      <h1 className="text-session">PRODUTOS</h1>
       <section className="session-container">
         {items?.map(({ product }) => (
           <ProductCard key={product.sku} product={product} />
