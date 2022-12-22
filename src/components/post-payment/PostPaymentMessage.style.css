@@ -1,0 +1,13 @@
+@tailwind components;
+
+@layer components {
+  .post-payment__container {
+    @apply mb-4 flex flex-col items-center space-y-4;
+  }
+  .post-payment__icon {
+    @apply text-5xl text-orangetheme-normal;
+  }
+  .post-payment__text {
+    @apply font-bold text-orangetheme-normal;
+  }
+}
