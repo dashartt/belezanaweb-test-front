@@ -1,72 +1,76 @@
-# React Tailwindcss Boilerplate build with Vite
+# 🚀 Bem vindo ao projeto Belezanaweb Test Front!
 
-This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [Tailwindcss](https://tailwindcss.com).
+## Introdução
 
-## What is inside?
+O teste consiste em um checkout simples contendo 3 passos (carrinho, pagamento e sucesso) de acordo com esse [layout](https://projects.invisionapp.com/prototype/font-test-cji0j0khf005c1t0132358e8k)
 
-This project uses many tools like:
+<details>
+<summary><strong> Tecnologias utilizadas </strong></summary>
 
-- [ReactJS](https://reactjs.org)
-- [Vite](https://vitejs.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [Jest](https://jestjs.io)
-- [Testing Library](https://testing-library.com)
-- [Tailwindcss](https://tailwindcss.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
+Frontend:
 
-## Getting Started
+<ul> 
+  <li> React c/ Typescript</li>
+  <li> TailwindCSS</li>
+  <li> React-router-dom</li>
+</ul>
+</details>
 
-### Install
+<details>
+<summary><strong> Critérios do projeto </strong></summary>
 
-Create the project.
+### Requerimentos:
 
-```bash
-npx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
-```
+- Pixel perfect ([nesse link](https://projects.invisionapp.com/prototype/font-test-cji0j0khf005c1t0132358e8k), você pode inspecionar para ver espaçamentos, fonte, tamanho, etc)
+- A aplicação precisa ser responsiva, utilizando o conceito de mobile-first. Use sua imaginação para entregar uma experiência boa no desktop.
 
-Access the project directory.
+### Observações:
 
-```bash
-cd my-app
-```
+1. Carrinho:
 
-Install dependencies.
+   - Consuma o [esse endpoint](https://www.mocky.io/v2/5b15c4923100004a006f3c07) e liste os itens, bem como o resumo;
 
-```bash
-pnpm install
-```
+2. Pagamento:
 
-Serve with hot reload at <http://localhost:5173>.
+   - Exiba um form com campos de cartão de crédito com validação em cada campo;
+   - Habilite o botão de Finalizar Pedido apenas se o form estiver válido;
 
-```bash
-pnpm run dev
-```
+3. Sucesso:
+   - Todo o conteúdo deverá ser exibido a partir dos dados persistidos;
 
-### Lint
+### O que iremos avaliar:
 
-```bash
-pnpm run lint
-```
+- Organização do código;
+- Mensagens e mudanças nos commits;
+- Composição/reutilização de componentes;
+- Testes unitários;
+- O motivo de ter escolhido cada tech da stack;
 
-### Typecheck
+</details>
 
-```bash
-pnpm run typecheck
-```
+---
 
-### Build
+## 👨‍💻 Rodando o projeto👨
 
-```bash
-pnpm run build
-```
+<details>
+  
+<summary><strong>Como rodar?</strong></summary>
+  
+1. Clone o repositório com o comando: <br/>
+  `git clone git@github.com:jonatasqueirozlima/belezanaweb-test-front.git`;
+2. Entre na pasta do repositório: <br/>
+  `cd belezanaweb-test-front`
+2. Inicie a aplicação com o comando:
+ - `docker-compose up -d --build`
+3. Acessar a seguinte URL: <br/>
+  http://localhost:3000/
 
-### Test
+</details>
 
-```bash
-pnpm run test
-```
+---
 
-## License
+## 🥷 Próximos passos</h2>
 
-This project is licensed under the MIT License.
+- Adicionar validações no formulário de pagamento
+- Controle de rotas, impedir que acesse /post-purchase sem antes realizar /payment
+- Testes unitários
