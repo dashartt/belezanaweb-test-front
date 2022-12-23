@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { IMaskInput } from 'react-imask'
 
 function PaymentForm() {
@@ -6,6 +7,8 @@ function PaymentForm() {
       <label htmlFor="cardNumber" className="payment-form__label">
         Número do cartão:
         <IMaskInput
+          /*
+            // @ts-ignore */
           className="payment-form__input"
           mask="0000.0000.0000.0000"
           placeholder="____.____.____.____"
@@ -27,6 +30,8 @@ function PaymentForm() {
         <label htmlFor="validity" className="payment-form__label">
           Validade(mês/ano):
           <IMaskInput
+            /*
+            // @ts-ignore */
             className="payment-form__input w-full"
             mask="00/0000"
             placeholder="__/____"
