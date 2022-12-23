@@ -4,6 +4,10 @@
 
 O teste consiste em um checkout simples contendo 3 passos (carrinho, pagamento e sucesso) de acordo com esse [layout](https://projects.invisionapp.com/prototype/font-test-cji0j0khf005c1t0132358e8k)
 
+Shopping cart             |  Payment                    |  Post purchase
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/jonatasqueirozlima/belezanaweb-test-front/blob/main/assets/img1.png)  |  ![](https://github.com/jonatasqueirozlima/belezanaweb-test-front/blob/main/assets/img2.png) | ![](https://github.com/jonatasqueirozlima/belezanaweb-test-front/blob/main/assets/img3.png)
+
 <details>
 <summary><strong> Tecnologias utilizadas </strong></summary>
 
