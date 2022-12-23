@@ -1,4 +1,4 @@
-import { formatPrice } from 'helpers'
+import { formatPrice } from '../../helpers'
 import { Product } from 'types/Product'
 
 type Props = {

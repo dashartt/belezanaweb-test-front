@@ -1,6 +1,6 @@
-import Payment from 'pages/payment/Payment'
-import PostPurchase from 'pages/post-purchase/PostPurchase'
-import ShoppingCart from 'pages/shopping-cart/ShoppingCart'
+import Payment from '../pages/payment/Payment'
+import PostPurchase from '../pages/post-purchase/PostPurchase'
+import ShoppingCart from '../pages/shopping-cart/ShoppingCart'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 function App() {

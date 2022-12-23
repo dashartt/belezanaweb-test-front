@@ -1,6 +1,6 @@
 import './CheckoutPrices.style.css'
-import { formatPrice } from 'helpers'
-import { ShoppingCart } from 'types/ShoppingCart'
+import { formatPrice } from '../../helpers'
+import { ShoppingCart } from '../../types/ShoppingCart'
 
 type Props = {
   data: ShoppingCart | null

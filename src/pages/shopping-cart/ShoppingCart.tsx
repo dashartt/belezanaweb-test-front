@@ -1,17 +1,22 @@
-import Header from 'components/header/Header'
+import Header from '../../components/header/Header'
 import { useEffect, useState } from 'react'
-import getProducts from 'services/api'
-import { ShoppingCart as IShoppingCart } from 'types/ShoppingCart'
+import getProducts from '../../services/api'
+import { ShoppingCart as IShoppingCart } from '../../types/ShoppingCart'
 import ListProducts from '../../components/list-products/ListProducts'
-import { Link } from 'react-router-dom'
-import CheckoutPrices from 'components/checkout-prices/CheckoutPrices'
+import { useNavigate } from 'react-router-dom'
+import CheckoutPrices from '../../components/checkout-prices/CheckoutPrices'
 
 function ShoppingCart() {
+  const navigate = useNavigate()
   const [data, setData] = useState<IShoppingCart | null>(null)
 
   useEffect(() => {
     getProducts().then((data_) => setData(data_))
   }, [])
+
+  const onNextPage = () => {
+    navigate('/payment', { state: { data } })
+  }
 
   return (
     <section className="page-container">
@@ -19,10 +24,8 @@ function ShoppingCart() {
       <section className="page-layout">
         <ListProducts items={data?.items || []} />
         <CheckoutPrices data={data} />
-        <button className="button-theme mt-4">
-          <Link to="/payment" state={{ data: data }}>
-            SEGUIR PARA O PAGAMENTO
-          </Link>
+        <button onClick={onNextPage} className="button-theme mt-4">
+          SEGUIR PARA O PAGAMENTO
         </button>
       </section>
     </section>

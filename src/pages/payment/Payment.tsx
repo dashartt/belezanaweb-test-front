@@ -1,14 +1,15 @@
 import './Payment.style.css'
-import Header from 'components/header/Header'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
+import { ShoppingCart } from '../../types/ShoppingCart'
+import Header from '../../components/header/Header'
 import PaymentForm from './PaymentForm'
-import { ShoppingCart } from 'types/ShoppingCart'
-import CheckoutPrices from 'components/checkout-prices/CheckoutPrices'
+import CheckoutPrices from '../../components/checkout-prices/CheckoutPrices'
 
 function Payment() {
   const { state } = useLocation()
   const navigate = useNavigate()
-  const shoppingCartDetails = state.data as ShoppingCart
+  const shoppingCartDetails = state?.data as ShoppingCart
 
   const onNextPage = () => {
     const paymentForm = document.getElementById(

@@ -1,5 +1,5 @@
-import { showEndCardNumber } from 'helpers'
-import { Buyer } from 'types/PurchaseDetails'
+import { showEndCardNumber } from '../../helpers'
+import { Buyer } from '../../types/PurchaseDetails'
 
 type Props = Buyer
 

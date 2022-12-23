@@ -1,5 +1,5 @@
-import ProductCard from 'components/product-card'
-import { ItemsInCart } from 'types/ShoppingCart'
+import ProductCard from '../../components/product-card'
+import { ItemsInCart } from '../../types/ShoppingCart'
 
 type Props = {
   items: ItemsInCart[] | []
